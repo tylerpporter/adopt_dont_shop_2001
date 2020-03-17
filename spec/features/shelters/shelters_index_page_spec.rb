@@ -3,16 +3,9 @@ require 'rails_helper'
 RSpec.describe "shelters index page", type: :feature do
   it "has a link to the home page" do
     visit "/shelters"
+    click_link "Home"
 
-    expect(page).to have_link('Home')
-  end
-end
-
-RSpec.describe "shelters index page", type: :feature do
-  it "has a link to create a new shelter" do
-    visit "/shelters"
-
-    expect(page).to have_link('New Shelter')
+    expect(current_path).to eq("/")
   end
 end
 
@@ -36,7 +29,7 @@ RSpec.describe "shelters index page", type: :feature do
 end
 
 RSpec.describe "shelters index page/:id", type: :feature do
-  it "can see a shelters info for given id" do
+  it "can show a shelters info for given id" do
     shelter1 = Shelter.create(name: 'FuzzTime',
                               address: "895 Fuzz St.",
                               city: "Westminster",

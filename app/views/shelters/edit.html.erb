@@ -1,7 +1,7 @@
-<h1>Create A New Shelter</h1>
+<h1>Edit Shelter Info</h1>
 
 <section>
-  <%= form_tag "/shelters" do %>
+  <%= form_tag "/shelters/#{@shelter.id}", method: :patch do %>
     <%= label_tag :name %>
     <%= text_field_tag :name %>
 

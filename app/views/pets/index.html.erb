@@ -1,0 +1,15 @@
+<a href="/">Home</a>
+
+<section>
+  <h1>All Pets</h1>
+</section>
+
+<section>
+  <% @pets.each do |pet| %>
+    <img src=<%= pet.image %> />
+    <p><%= pet.name %></p>
+    <p><%= pet.approximate_age %></p>
+    <p><%= pet.sex %></p>
+    <p><%= pet.shelter %></p>
+    <% end %>
+</section>

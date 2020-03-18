@@ -10,17 +10,19 @@ RSpec.describe "/shelters", type: :feature do
 end
 
 RSpec.describe "/shelters", type: :feature do
-  it "can see all shelter names" do
+  it "allows user to see all shelter names" do
     shelter1 = Shelter.create(name: 'FuzzTime',
                               address: "895 Fuzz St.",
                               city: "Westminster",
                               state: "CO",
-                              zip: "80021")
+                              zip: "80021"
+                            )
     shelter2 = Shelter.create(name: 'DogPaws',
                               address: "123 Pup St.",
                               city: "Arvada",
                               state: "CO",
-                              zip: "80005")
+                              zip: "80005"
+                            )
     visit "/shelters"
 
     expect(page).to have_content(shelter1.name)

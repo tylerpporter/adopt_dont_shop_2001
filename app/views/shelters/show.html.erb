@@ -1,5 +1,7 @@
-<a href="/">Home</a></br>
-<a href="/shelters">All Shelters</a>
+<section>
+  <a href="/">Home</a></br>
+  <a href="/shelters">All Shelters</a>
+</section>
 
 <section>
   <h1><%= @shelter.name %></h1>
@@ -11,4 +13,8 @@
 
 <section>
   <h3><%= link_to 'Update Shelter', "/shelters/#{@shelter.id}/edit" %><h3>
+</section>
+
+<section>
+  <h3><%= link_to 'Delete Shelter', "/shelters/#{@shelter.id}" , method: :delete %><h3>
 </section>

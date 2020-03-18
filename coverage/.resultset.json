@@ -187,10 +187,40 @@
         1,
         1,
         1,
+        1,
         null
       ],
       "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/app/helpers/application_helper.rb": [
         1,
+        null
+      ],
+      "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/spec/features/shelters/user_can_delete_a_shelter_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/spec/features/shelters/user_can_edit_shelters_spec.rb": [
@@ -314,7 +344,7 @@
         1,
         null,
         1,
-        6,
+        8,
         null,
         null,
         1,
@@ -336,7 +366,7 @@
         null,
         null,
         1,
-        8,
+        10,
         null,
         null,
         1,
@@ -344,9 +374,11 @@
         null,
         null,
         1,
+        1,
+        1,
         null,
         null,
-        null,
+        1,
         1,
         1,
         null,
@@ -375,6 +407,6 @@
         null
       ]
     },
-    "timestamp": 1584497241
+    "timestamp": 1584498762
   }
 }

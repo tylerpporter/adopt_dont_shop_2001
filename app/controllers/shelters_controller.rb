@@ -35,4 +35,9 @@ class SheltersController < ApplicationController
     redirect_to "/shelters/#{edit.id}"
   end
 
+  def destroy
+    show.delete
+    redirect_to "/shelters"
+  end
+
 end

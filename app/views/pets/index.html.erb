@@ -1,4 +1,4 @@
-<a href="/">Home</a>
+<%= link_to "Home", "/" %>
 
 <section>
   <h1>All Pets</h1>
@@ -6,12 +6,13 @@
 
 <section>
   <% @pets.each do |pet| %>
-    <%= image_tag pet.image, style: "max-height: 200px; max-width: 200px" %>
-    <section>
+    <section id='pet-<%= pet.id %>'>
+      <%= image_tag pet.image, style: "max-height: 200px; max-width: 200px" %>
       <h3><%= link_to pet.name, "/pets/#{pet.id}" %><h3>
+      <p><%= pet.approximate_age %></p>
+      <p><%= pet.sex %></p>
+      <p><%= link_to pet.shelter.name, "/shelters/#{pet.shelter_id}" %></p>
+      <%= link_to "Edit", "/pets/#{pet.id}/edit" %>
     </section>
-    <p><%= pet.approximate_age %></p>
-    <p><%= pet.sex %></p>
-    <p><%= link_to pet.shelter.name, "/shelters/#{pet.shelter_id}" %></p>
-    <% end %>
+  <% end %>
 </section>

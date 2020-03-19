@@ -1,15 +1,16 @@
-<a href="/">Home</a>
+<%= link_to "Home", "/" %>
 
 <section>
   <h1>All Shelters</h1>
-  <a href="/shelters/new">New Shelter</a>
+  <%= link_to "New Shelter", "/shelters/new" %>
 </section>
 
 <section>
   <% @shelters.each do |shelter| %>
     <section id='shelter-<%= shelter.id %>'>
-      <h3><a href="/shelters/<%= shelter.id %>"><%= shelter.name %></a></h3>
+      <h3><%= link_to shelter.name, "/shelters/#{shelter.id}" %></h3>
       <%= link_to "Edit", "/shelters/#{shelter.id}/edit" %>
+      <%= link_to 'Delete', "/shelters/#{shelter.id}", method: :delete %>
     </section>
   <% end %>
 </section>

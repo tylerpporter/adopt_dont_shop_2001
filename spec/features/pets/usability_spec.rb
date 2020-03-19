@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Usability features for /shelter' do
+RSpec.describe 'Usability features for /pets' do
   before :each do
     @shelter1 = Shelter.create(name: 'FuzzTime',
                               address: "895 Fuzz St.",
@@ -37,37 +37,14 @@ RSpec.describe 'Usability features for /shelter' do
       )
   end
 
-  it "allows user to edit a shelter" do
-    visit '/shelters'
+  it "allows user to edit a pet" do
+    visit '/pets'
 
-    within("#shelter-#{@shelter1.id}") do
+    within("#pet-#{@pet1.id}") do
       click_link 'Edit'
     end
 
-    expect(current_path).to eq("/shelters/#{@shelter1.id}/edit")
-  end
-
-  it "allows user to delete a shelter" do
-    visit '/shelters'
-
-    within("#shelter-#{@shelter1.id}") do
-      click_link 'Delete'
-    end
-
-    expect(current_path).to eq("/shelters")
-    expect(page).to_not have_content(@shelter1.name)
-  end
-
-  describe "Usability features for /shelters/:id/pets" do
-    it "allows user to edit a pet" do
-      visit "/shelters/#{@shelter1.id}/pets"
-
-      within("#pet-#{@pet1.id}") do
-        click_link 'Edit'
-      end
-
-      expect(current_path).to eq("/pets/#{@pet1.id}/edit")
-    end
+    expect(current_path).to eq("/pets/#{@pet1.id}/edit")
   end
 
 end

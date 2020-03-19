@@ -20,14 +20,12 @@ class SheltersController < ApplicationController
   end
 
   def update
-    # edit = Shelter.update(params[:id], shelter_params)
-    edit.update(shelter_params)
-    redirect_to "/shelters/#{edit.id}"
+    updated = Shelter.update(params[:id], shelter_params)
+    redirect_to "/shelters/#{updated.id}"
   end
 
   def destroy
-    # Shelter.delete(params[:id])
-    show.delete
+    Shelter.delete(params[:id])
     redirect_to "/shelters"
   end
 

@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-03-19T14:39:58-06:00">2020-03-19T14:39:58-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-03-19T15:08:48-06:00">2020-03-19T15:08:48-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.44%</span></span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.13
+         1.15
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>35</b> files in total.
-    <b>321</b> relevant lines. 
-    <span class="green"><b>316</b> lines covered</span> and
-    <span class="red"><b>5</b> lines missed </span>
+    <b>326</b> relevant lines. 
+    <span class="green"><b>326</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -77,7 +77,7 @@
         <td>22</td>
         <td>22</td>
         <td>0</td>
-        <td>1.9</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -302,12 +302,12 @@
       
       <tr>
         <td class="strong"><a href="#761a6139cc2f34aa02fbca8b36d672db09d55a60" class="src_link" title="spec/features/shelters/usability_spec.rb">spec/features/shelters/usability_spec.rb</a></td>
-        <td class="red strong">37.5 %</td>
+        <td class="green strong">100.0 %</td>
         <td>48</td>
-        <td>8</td>
-        <td>3</td>
-        <td>5</td>
-        <td>0.4</td>
+        <td>13</td>
+        <td>13</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -744,8 +744,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="4">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="9" data-linenumber="4">
+          <span class="hits">9</span>
           
           <code class="ruby">    @shelters = Shelter.all</code>
         </li>
@@ -810,8 +810,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="15">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="15">
+          <span class="hits">11</span>
           
           <code class="ruby">    @shelter = Shelter.find(params[:id])</code>
         </li>
@@ -834,8 +834,8 @@
           <code class="ruby">  def edit</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="19">
+          <span class="hits">2</span>
           
           <code class="ruby">    show</code>
         </li>
@@ -3522,11 +3522,11 @@
         <div class="source_table" id="761a6139cc2f34aa02fbca8b36d672db09d55a60">
   <div class="header">
     <h3>spec/features/shelters/usability_spec.rb</h3>
-    <h4><span class="red">37.5 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>5</b> lines missed.</span>
+      <b>13</b> relevant lines. 
+      <span class="green"><b>13</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -3557,8 +3557,8 @@
           <code class="ruby">  before :each do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="5">
-          
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
           <code class="ruby">    @shelter1 = Shelter.create(name: &#39;FuzzTime&#39;,</code>
         </li>
@@ -3593,8 +3593,8 @@
           <code class="ruby">      )</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
-          
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
           <code class="ruby">    @shelter2 = Shelter.create(name: &#39;KatsR-Us&#39;,</code>
         </li>
@@ -3629,8 +3629,8 @@
           <code class="ruby">      )</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="17">
-          
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
           
           <code class="ruby">    @pet1 = Pet.create(image: &quot;https://upload.wikimedia.org/wikipedia/en/d/df/Sam_dog.jpg&quot;,</code>
         </li>
@@ -3671,8 +3671,8 @@
           <code class="ruby">      )</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="24">
-          
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
           
           <code class="ruby">    @pet2 = Pet.create(image: &quot;https://cdn.fstoppers.com/styles/large-16-9/s3/lead/2018/12/cat-parody-instagram-removal.jpg&quot;,</code>
         </li>
@@ -3713,8 +3713,8 @@
           <code class="ruby">      )</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
-          
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
           
           <code class="ruby">    @pet3 = Pet.create(image: &quot;https://api.time.com/wp-content/uploads/2014/06/49cb79d35e3640a1b005287de39f1754-0.jpg&quot;,</code>
         </li>
@@ -3761,58 +3761,58 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # it &quot;allows user to edit a shelter&quot; do</code>
+          <code class="ruby">  it &quot;allows user to edit a shelter&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   visit &#39;/shelters&#39;</code>
+          <code class="ruby">    visit &#39;/shelters&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   within(&quot;#shelter-#{@shelter1.id}&quot;) do</code>
+          <code class="ruby">    within(&quot;#shelter-#{@shelter1.id}&quot;) do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #     click_link &#39;Edit&#39;</code>
+          <code class="ruby">      click_link &#39;Edit&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">  #   end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   expect(current_path).to eq(&quot;shelters/#{@shelter1.id}/edit&quot;)</code>
+          <code class="ruby">    expect(current_path).to eq(&quot;/shelters/#{@shelter1.id}/edit&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby">  # end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">

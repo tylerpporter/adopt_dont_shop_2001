@@ -36,13 +36,13 @@ RSpec.describe 'Usability features for /shelter' do
                    shelter_id: @shelter2.id
       )
   end
-  # it "allows user to edit a shelter" do
-  #   visit '/shelters'
-  #
-  #   within("#shelter-#{@shelter1.id}") do
-  #     click_link 'Edit'
-  #   end
-  #
-  #   expect(current_path).to eq("shelters/#{@shelter1.id}/edit")
-  # end
+  it "allows user to edit a shelter" do
+    visit '/shelters'
+
+    within("#shelter-#{@shelter1.id}") do
+      click_link 'Edit'
+    end
+
+    expect(current_path).to eq("/shelters/#{@shelter1.id}/edit")
+  end
 end

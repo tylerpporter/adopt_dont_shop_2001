@@ -4,8 +4,7 @@ class SheltersController < ApplicationController
     @shelters = Shelter.all
   end
 
-  def new
-  end
+  def new; end
 
   def shelter_params
     {
@@ -38,6 +37,10 @@ class SheltersController < ApplicationController
   def destroy
     show.delete
     redirect_to "/shelters"
+  end
+
+  def index_pets
+    @pets = show.pets 
   end
 
 end

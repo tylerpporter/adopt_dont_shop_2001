@@ -12,9 +12,10 @@
 </section>
 
 <section>
-  <h3><%= link_to 'Update Shelter', "/shelters/#{@shelter.id}/edit" %><h3>
+  <p><%= link_to 'Update Shelter', "/shelters/#{@shelter.id}/edit" %><p>
+  <p><%= link_to 'Delete Shelter', "/shelters/#{@shelter.id}" , method: :delete %><p>
 </section>
 
 <section>
-  <h3><%= link_to 'Delete Shelter', "/shelters/#{@shelter.id}" , method: :delete %><h3>
+  <h2><%= link_to 'Pets', "/shelters/#{@shelter.id}/pets" %><h2>
 </section>

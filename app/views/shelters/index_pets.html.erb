@@ -1,5 +1,3 @@
-<a href="/">Home</a>
-
 <section>
   <h1>All Pets</h1>
 </section>
@@ -7,9 +5,8 @@
 <section>
   <% @pets.each do |pet| %>
     <%= image_tag pet.image, style: "max-height: 200px; max-width: 200px" %>
-    <p><%= pet.name %></p>
+    <h3><a href="/pets/<%= pet.id %>"><%= pet.name %></a></h3>
     <p><%= pet.approximate_age %></p>
     <p><%= pet.sex %></p>
-    <p><%= pet.shelter.name %></p>
     <% end %>
 </section>

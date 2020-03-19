@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-shelter1 = Shelter.create(name: 'FuzzTime',
+shelter = Shelter.create(name: 'FuzzTime',
                           address: "895 Fuzz St.",
                           city: "Westminster",
                           state: "CO",
@@ -16,5 +16,11 @@ pet1 = Pet.create(image: "https://upload.wikimedia.org/wikipedia/en/d/df/Sam_dog
                   name: "Sam",
                   approximate_age: 23,
                   sex: "Male",
-                  shelter_id: shelter1.id 
+                  shelter_id: shelter.id
+                )
+pet2 = Pet.create(image: "https://cdn.fstoppers.com/styles/large-16-9/s3/lead/2018/12/cat-parody-instagram-removal.jpg",
+                  name: "Burt",
+                  approximate_age: 47,
+                  sex: "Male",
+                  shelter_id: shelter.id
                 )

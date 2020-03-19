@@ -157,7 +157,7 @@ and I am redirected to the Shelter Index page where I see the new Shelter listed
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 5, Shelter Update
 
@@ -179,7 +179,7 @@ and I am redirected to the Shelter's Show page where I see the shelter's updated
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 6, Shelter Delete
 
@@ -198,7 +198,7 @@ and I am redirected to the shelter index page where I no longer see this shelter
 Pets can be adopted from the Shelter. Pets belong to a shelter.
 
 ```
-[ ] done
+[X] done
 
 User Story 7, Pet Index
 

@@ -21,7 +21,7 @@ RSpec.describe "/pets", typer: :feature do
                       name: "Sam",
                       approximate_age: 23,
                       sex: "Male",
-                      shelter: shelter1.name
+                      shelter_id: shelter1.id
                     )
     visit "/pets"
 
@@ -29,6 +29,6 @@ RSpec.describe "/pets", typer: :feature do
     expect(page).to have_content(pet1.name)
     expect(page).to have_content(pet1.approximate_age)
     expect(page).to have_content(pet1.sex)
-    expect(page).to have_content(pet1.shelter)
+    expect(page).to have_content(pet1.shelter.name)
   end
 end

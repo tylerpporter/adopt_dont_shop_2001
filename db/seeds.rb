@@ -16,5 +16,5 @@ pet1 = Pet.create(image: "https://upload.wikimedia.org/wikipedia/en/d/df/Sam_dog
                   name: "Sam",
                   approximate_age: 23,
                   sex: "Male",
-                  shelter: shelter1.name
+                  shelter_id: shelter1.id 
                 )

@@ -382,6 +382,63 @@
         null,
         null
       ],
+      "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/spec/models/pet_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/app/models/pet.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/spec/models/shelter_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/app/models/shelter.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/app/controllers/pets_controller.rb": [
         1,
         null,
@@ -411,23 +468,8 @@
         1,
         null
       ],
-      "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/app/models/pet.rb": [
-        1,
-        null,
-        null
-      ],
-      "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
       "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/app/controllers/welcome_controller.rb": [
         1,
-        1,
-        null,
-        null
-      ],
-      "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/app/models/shelter.rb": [
         1,
         null,
         null
@@ -478,6 +520,6 @@
         null
       ]
     },
-    "timestamp": 1584505832
+    "timestamp": 1584581094
   }
 }

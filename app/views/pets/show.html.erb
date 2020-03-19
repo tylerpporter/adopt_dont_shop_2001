@@ -6,3 +6,7 @@
   <p><%= @pet.sex %></p>
   <p><%= @pet.status %></p>
 </section>
+
+<section>
+  <p><%= link_to "Update Pet", "/pets/#{@pet.id}/edit" %></p>
+</section>

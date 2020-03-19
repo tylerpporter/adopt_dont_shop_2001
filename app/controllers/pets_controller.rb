@@ -5,7 +5,7 @@ class PetsController < ApplicationController
   end
 
   def show
-    @pet = Pet.find(params[:id])
+    @pet = by_id
   end
 
   def new
@@ -13,7 +13,7 @@ class PetsController < ApplicationController
   end
 
   def edit
-    show
+    @pet = by_id
   end
 
   def create
@@ -32,6 +32,10 @@ class PetsController < ApplicationController
   end
 
   private
+
+  def by_id
+    Pet.find(params[:id])
+  end
 
   def pets_params
     params.permit(:image, :name, :description, :approximate_age, :sex, :shelter)

@@ -12,11 +12,11 @@ class SheltersController < ApplicationController
   end
 
   def show
-    @shelter = Shelter.find(params[:id])
+    @shelter = by_id
   end
 
   def edit
-    show
+    @shelter = by_id
   end
 
   def update
@@ -25,15 +25,19 @@ class SheltersController < ApplicationController
   end
 
   def destroy
-    Shelter.delete(params[:id])
+    Shelter.destroy(params[:id])
     redirect_to "/shelters"
   end
 
   def index_pets
-    @pets = show.pets
+    show
   end
 
   private
+
+  def by_id
+    Shelter.find(params[:id])
+  end
 
   def shelter_params
     params.permit(:name, :address, :city, :state, :zip)

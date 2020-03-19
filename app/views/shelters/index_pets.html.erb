@@ -3,7 +3,7 @@
 </section>
 
 <section>
-  <% @pets.each do |pet| %>
+  <% @shelter.pets.each do |pet| %>
     <%= image_tag pet.image, style: "max-height: 200px; max-width: 200px" %>
     <h3><a href="/pets/<%= pet.id %>"><%= pet.name %></a></h3>
     <p><%= pet.approximate_age %></p>

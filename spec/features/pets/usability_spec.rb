@@ -47,4 +47,21 @@ RSpec.describe 'Usability features for /pets' do
     expect(current_path).to eq("/pets/#{@pet1.id}/edit")
   end
 
+  it "allows user to delte a pet" do
+    visit "/pets"
+
+    expect(page).to have_content(@pet1.name)
+    expect(page).to have_content(@pet2.name)
+    expect(page).to have_content(@pet3.name)
+
+    within("#pet-#{@pet1.id}") do
+      click_link 'Delete'
+    end
+
+    expect(current_path).to eq("/pets")
+    expect(page).to_not have_content(@pet1.name)
+    expect(page).to have_content(@pet2.name)
+    expect(page).to have_content(@pet3.name)
+  end
+
 end

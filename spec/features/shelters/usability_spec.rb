@@ -69,7 +69,7 @@ RSpec.describe 'Usability features for /shelter' do
       expect(current_path).to eq("/pets/#{@pet1.id}/edit")
     end
 
-    it "allows user to delte a pet" do
+    it "allows user to delete a pet" do
       visit "/shelters/#{@shelter1.id}/pets"
 
       expect(page).to have_content(@pet1.name)

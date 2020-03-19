@@ -10,7 +10,7 @@ RSpec.describe "/shelters/:id", type: :feature do
 end
 
 RSpec.describe "/shelters/:id", type: :feature do
-  it "can show a shelters info for given id" do
+  it "allows user to see a shelters info for given id" do
     shelter1 = Shelter.create(name: 'FuzzTime',
                               address: "895 Fuzz St.",
                               city: "Westminster",

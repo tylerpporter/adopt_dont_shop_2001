@@ -40,7 +40,7 @@ class SheltersController < ApplicationController
   end
 
   def index_pets
-    @pets = show.pets 
+    @pets = show.pets
   end
 
 end

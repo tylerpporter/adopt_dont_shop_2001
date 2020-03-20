@@ -1,10 +1,10 @@
 <section>
   <%= image_tag @pet.image, style: "max-height: 200px; max-width: 200px" %>
   <h1><%= link_to @pet.name, "/pets/#{@pet.id}" %></h1>
-  <p><%= @pet.description %></p>
-  <p><%= @pet.approximate_age %></p>
-  <p><%= @pet.sex %></p>
-  <p><%= @pet.status %></p>
+  <h3><%= @pet.description %></h3>
+  <p>Approximate age: <%= @pet.approximate_age %></p>
+  <p>Sex: <%= @pet.sex %></p>
+  <p>Status: <%= @pet.status %></p>
 </section>
 
 <section>

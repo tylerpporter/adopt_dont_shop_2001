@@ -4,21 +4,21 @@ class PetsController < ApplicationController
     @pets = Pet.all
   end
 
-  def show
-    @pet = by_id
-  end
-
   def new
-    @shelter = Shelter.find(params[:id])
-  end
-
-  def edit
-    @pet = by_id
+    @shelter_id = shelter_by_id
   end
 
   def create
     new.pets.create(pets_params)
     redirect_to "/shelters/#{new.id}/pets"
+  end
+
+  def show
+    @pet = by_id
+  end
+
+  def edit
+    @pet = by_id
   end
 
   def update
@@ -35,6 +35,10 @@ class PetsController < ApplicationController
 
   def by_id
     Pet.find(params[:id])
+  end
+
+  def shelter_by_id
+    Shelter.find(params[:id])
   end
 
   def pets_params

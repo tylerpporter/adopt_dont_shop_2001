@@ -10,7 +10,7 @@ RSpec.describe "shelters/:id/pets/new", type: :feature do
                             )
     visit "/shelters/#{shelter.id}/pets"
     click_link "Create Pet"
-
+# require "pry"; binding.pry
     expect(current_path).to eq("/shelters/#{shelter.id}/pets/new")
 
     fill_in "Image", with: "https://api.time.com/wp-content/uploads/2014/06/49cb79d35e3640a1b005287de39f1754-0.jpg"

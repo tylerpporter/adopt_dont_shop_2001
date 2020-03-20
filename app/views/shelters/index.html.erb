@@ -1,14 +1,16 @@
 <section>
-  <h1>All Shelters</h1>
-  <%= link_to "New Shelter", "/shelters/new" %>
+  <div class='headers'><h1>All Shelters</h1></div>
+  <div class='button'><%= link_to "New Shelter", "/shelters/new" %></div>
 </section>
 
 <section>
   <% @shelters.each do |shelter| %>
     <section id='shelter-<%= shelter.id %>'>
-      <h3><%= link_to shelter.name, "/shelters/#{shelter.id}" %></h3>
-      <%= link_to "Edit", "/shelters/#{shelter.id}/edit" %>
-      <%= link_to 'Delete', "/shelters/#{shelter.id}", method: :delete %>
+      <div class='grid-container'>
+        <div class='grid-item item1'><h3><%= link_to shelter.name, "/shelters/#{shelter.id}" %></h3></div>
+        <div class='grid-item item3'><%= link_to "Edit", "/shelters/#{shelter.id}/edit" %></div>
+        <div class='grid-item item4'><%= link_to 'Delete', "/shelters/#{shelter.id}", method: :delete %></div>
+      </div>
     </section>
   <% end %>
 </section>

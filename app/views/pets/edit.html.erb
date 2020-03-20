@@ -1,22 +1,24 @@
-<h1>Edit Pet Info</h1>
+<div class='headers'><h1>Edit Pet Info</h1></div>
 
-<section>
-  <%= form_tag "/pets/#{@pet.id}", method: :patch do %>
-    <%= label_tag :image %>
-    <%= text_field_tag :image %>
+<section class='grid-container'>
+  <section class='form-text'>
+    <%= form_tag "/pets/#{@pet.id}", method: :patch do %>
+      <%= label_tag :image %>
+      <%= text_field_tag :image %>
 
-    <%= label_tag :name %>
-    <%= text_field_tag :name %>
+      <%= label_tag :name %>
+      <%= text_field_tag :name %>
 
-    <%= label_tag :description %>
-    <%= text_field_tag :description %>
+      <%= label_tag :description %>
+      <%= text_field_tag :description %>
 
-    <%= label_tag :approximate_age %>
-    <%= text_field_tag :approximate_age %>
+      <%= label_tag :approximate_age %>
+      <%= text_field_tag :approximate_age %>
 
-    <%= label_tag :sex %>
-    <%= text_field_tag :sex %>
+      <%= label_tag :sex %>
+      <%= text_field_tag :sex %>
 
-    <%= submit_tag "Update Pet"%>
+      <%= submit_tag "Update Pet"%>
   <% end %>
+  </section>
 </section>

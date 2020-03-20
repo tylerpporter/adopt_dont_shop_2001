@@ -1,17 +1,31 @@
 <section>
-  <h1>All Pets</h1>
+  <div class='headers'><h1>All Pets</h1></div>
 </section>
 
 <section>
   <% @pets.each do |pet| %>
     <section id='pet-<%= pet.id %>'>
-      <%= image_tag pet.image, style: "max-height: 200px; max-width: 200px" %>
-      <h3><%= link_to pet.name, "/pets/#{pet.id}" %><h3>
-      <p><%= pet.approximate_age %></p>
-      <p><%= pet.sex %></p>
-      <p><%= link_to pet.shelter.name, "/shelters/#{pet.shelter_id}" %></p>
-      <%= link_to "Edit", "/pets/#{pet.id}/edit" %>
-      <%= link_to "Delete", "/pets/#{pet.id}", method: :delete %>
+      <div class='grid-container'>
+        <div class='grid-item item2'>
+          <%= image_tag pet.image, style: "max-height: 200px; max-width: 200px" %>
+        </div>
+        <div class='grid-item item1'>
+          <strong><%= link_to pet.name, "/pets/#{pet.id}" %></strong>
+          <section class='button'>
+            <%= link_to "Edit", "/pets/#{pet.id}/edit" %>
+            <%= link_to "Delete", "/pets/#{pet.id}", method: :delete %>
+          </section>
+        </div>
+        <div class='grid-item item3'>
+          <p>Approximate Age: <%= pet.approximate_age %></p>
+        </div>
+        <div class='grid-item item4'>
+          <p>Sex: <%= pet.sex %></p>
+        </div>
+        <div class='grid-item item5'>
+          <p>Shelter: <%= link_to pet.shelter.name, "/shelters/#{pet.shelter_id}" %></p>
+        </div>
+      </div>
     </section>
   <% end %>
 </section>

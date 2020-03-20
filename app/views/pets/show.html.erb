@@ -1,13 +1,20 @@
-<section>
-  <%= image_tag @pet.image, style: "max-height: 200px; max-width: 200px" %>
-  <h1><%= link_to @pet.name, "/pets/#{@pet.id}" %></h1>
-  <h3><%= @pet.description %></h3>
-  <p>Approximate age: <%= @pet.approximate_age %></p>
-  <p>Sex: <%= @pet.sex %></p>
-  <p>Status: <%= @pet.status %></p>
-</section>
-
-<section>
-  <p><%= link_to "Update Pet", "/pets/#{@pet.id}/edit" %></p>
-  <p><%= link_to "Delete Pet", "/pets/#{@pet.id}", method: :delete %></p>
+<section class='grid-container'>
+  <div class='grid-item item2'>
+    <%= image_tag @pet.image, style: "max-height: 400px; max-width: 400px" %>
+  </div>
+  <div class='grid-item item1'>
+    <strong><%= link_to @pet.name, "/pets/#{@pet.id}" %></strong>
+    <section class='button'>
+      <%= link_to "Update Pet", "/pets/#{@pet.id}/edit" %>
+      <%= link_to "Delete Pet", "/pets/#{@pet.id}", method: :delete %>
+    </section>
+  </div>
+  <div class='grid-item item3'>
+    <h3><%= @pet.description %></h3>
+  </div>
+  <div class='grid-item item4'>
+    <p>Approximate age: <%= @pet.approximate_age %></p>
+    <p>Sex: <%= @pet.sex %></p>
+    <p>Status: <%= @pet.status %></p
+  </div>
 </section>

@@ -4,6 +4,16 @@
   text-align: center;
 }
 
+input[type="text"] {
+  font-size: 12px;
+}
+
+.form-text {
+  color: #fff;
+  padding: 20px;
+  font-size: 16px;
+}
+
 .headers {
   text-align: center;
   font-size: 24px;

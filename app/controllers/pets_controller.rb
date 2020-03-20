@@ -9,7 +9,8 @@ class PetsController < ApplicationController
   end
 
   def create
-    new.pets.create(pets_params)
+    shelter = shelter_by_id
+    shelter.pets.create(pets_params)
     redirect_to "/shelters/#{new.id}/pets"
   end
 

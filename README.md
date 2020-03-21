@@ -213,7 +213,7 @@ Then I see each Pet in the system including the Pet's:
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 8, Shelter Pets Index
 
@@ -227,7 +227,7 @@ Then I see each Pet that can be adopted from that Shelter with that shelter_id i
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 9, Pet Show
 
@@ -243,7 +243,7 @@ Then I see the pet with that id including the pet's:
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 10, Shelter Pet Creation
 
@@ -266,7 +266,7 @@ and I am redirected to the Shelter Pets Index page where I can see the new pet l
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 11, Pet Update
 
@@ -287,7 +287,7 @@ and I am redirected to the Pet Show page where I see the Pet's updated informati
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 12, Pet Delete
 
@@ -306,7 +306,7 @@ and I am redirected to the pet index page where I no longer see this pet
 Users should be able to use the site easily. This means making sure there are links/buttons to reach all parts of the site and the styling/layout is sensible.
 
 ```
-[ ] done
+[X] done
 
 User Story 13, Shelter Update From Shelter Index Page
 
@@ -318,7 +318,7 @@ I should be taken to that shelters edit page where I can update its information 
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 14, Shelter Delete From Shelter Index Page
 
@@ -330,7 +330,7 @@ I am returned to the Shelter Index Page where I no longer see that shelter
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 15, Pet Update From Pets Index Page
 
@@ -341,7 +341,7 @@ When I click the link
 I should be taken to that pets edit page where I can update its information just like in User Story 11
 ```
 ```
-[ ] done
+[X] done
 
 User Story 16, Pet Delete From Pets Index Page
 
@@ -353,7 +353,7 @@ I should be taken to the pets index page where I no longer see that pet
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 17, Shelter Links
 
@@ -363,7 +363,7 @@ Then that link takes me to that Shelter's show page
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 18, Pet Links
 
@@ -373,7 +373,7 @@ Then that link takes me to that Pet's show page
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 19, Pet Index Link
 
@@ -383,7 +383,7 @@ Then I see a link at the top of the page that takes me to the Pet Index
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 20, Shelter Index Link
 
@@ -393,7 +393,7 @@ Then I see a link at the top of the page that takes me to the Shelter Index
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 21, Shelter Pet Index Link
 
@@ -403,7 +403,7 @@ Then I see a link to take me to that shelter's pets page ('/shelters/:id/pets')
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 22, Styling
 
@@ -417,7 +417,7 @@ Then I should see a reasonably well styled page
 ## Extensions
 
 ```
-[ ] done
+[X] done
 
 User Story 23, Shelter Pet Count
 

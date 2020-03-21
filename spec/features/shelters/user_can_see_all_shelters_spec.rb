@@ -1,15 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe "/shelters", type: :feature do
-  it "has a link to the home page" do
-    visit "/shelters"
-    click_link "Home"
-
-    expect(current_path).to eq("/")
-  end
-end
-
-RSpec.describe "/shelters", type: :feature do
   it "allows user to see all shelter names" do
     shelter1 = Shelter.create(name: 'FuzzTime',
                               address: "895 Fuzz St.",
@@ -24,7 +15,10 @@ RSpec.describe "/shelters", type: :feature do
                               zip: "80005"
                             )
     visit "/shelters"
-
+#     click_link "Sort Shelters (Alphabetical)"
+# require "pry"; binding.pry
+#
+#     page.body.index(shelter2.name).should < page.body.index(shelter1.name)
     expect(page).to have_content(shelter1.name)
     expect(page).to have_content(shelter2.name)
   end

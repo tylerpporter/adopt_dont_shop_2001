@@ -653,15 +653,6 @@
         1,
         1,
         1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
         null,
         null,
         null,
@@ -674,6 +665,9 @@
         null,
         null,
         1,
+        null,
+        null,
+        null,
         null,
         1,
         1,
@@ -850,6 +844,23 @@
         1,
         2,
         null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/tylerporter/Turing/mod2/adopt_dont_shop_2001/app/models/shelter.rb": [
@@ -859,6 +870,9 @@
         null,
         null,
         null,
+        null,
+        1,
+        1,
         null,
         null
       ],
@@ -919,7 +933,7 @@
         1,
         null,
         1,
-        20,
+        19,
         null,
         null,
         1,
@@ -965,6 +979,6 @@
         null
       ]
     },
-    "timestamp": 1584806764
+    "timestamp": 1584810101
   }
 }

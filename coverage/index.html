@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-03-20T13:03:16-06:00">2020-03-20T13:03:16-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-03-21T10:06:04-06:00">2020-03-21T10:06:04-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.27
+         1.32
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>38</b> files in total.
-    <b>386</b> relevant lines. 
-    <span class="green"><b>386</b> lines covered</span> and
+    <b>393</b> relevant lines. 
+    <span class="green"><b>393</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -393,9 +393,9 @@
       <tr>
         <td class="strong"><a href="#8e9698fce0a361bc9833b7ae09dffa3459826ac9" class="src_link" title="spec/features/shelters/user_can_see_pets_of_shelter_spec.rb">spec/features/shelters/user_can_see_pets_of_shelter_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>34</td>
-        <td>15</td>
-        <td>15</td>
+        <td>35</td>
+        <td>16</td>
+        <td>16</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -413,11 +413,11 @@
       <tr>
         <td class="strong"><a href="#116d165c06da4a35574210aea6bfa566708a5c26" class="src_link" title="spec/models/pet_spec.rb">spec/models/pet_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>14</td>
-        <td>10</td>
-        <td>10</td>
+        <td>49</td>
+        <td>16</td>
+        <td>16</td>
         <td>0</td>
-        <td>1.6</td>
+        <td>2.9</td>
       </tr>
       
       <tr>
@@ -5777,8 +5777,8 @@
     <h3>spec/features/shelters/user_can_see_pets_of_shelter_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>15</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
+      <b>16</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5978,13 +5978,19 @@
           <code class="ruby">    expect(page).to have_content(pet2.sex)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&quot;Pet Count: #{Pet.count}&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">end</code>
@@ -6073,8 +6079,8 @@
     <h3>spec/models/pet_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>16</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -6103,64 +6109,274 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &#39;validations&#39; do</code>
+          <code class="ruby">  before :each do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="6" data-linenumber="5">
+          <span class="hits">6</span>
           
-          <code class="ruby">    it {should validate_presence_of :image}</code>
+          <code class="ruby">    @shelter1 = Shelter.create(name: &#39;FuzzTime&#39;,</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="6">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="6">
           
-          <code class="ruby">    it {should validate_presence_of :name}</code>
+          
+          <code class="ruby">                              address: &quot;895 Fuzz St.&quot;,</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="7">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="7">
           
-          <code class="ruby">    it {should validate_presence_of :approximate_age}</code>
+          
+          <code class="ruby">                              city: &quot;Westminster&quot;,</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="8">
           
-          <code class="ruby">    it {should validate_presence_of :sex}</code>
+          
+          <code class="ruby">                              state: &quot;CO&quot;,</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="9">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="9">
           
-          <code class="ruby">    it {should validate_presence_of :shelter}</code>
+          
+          <code class="ruby">                              zip: &quot;80021&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">      )</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="6" data-linenumber="11">
+          <span class="hits">6</span>
           
-          <code class="ruby">  describe &#39;relationships&#39; do</code>
+          <code class="ruby">    @shelter2 = Shelter.create(name: &#39;KatsR-Us&#39;,</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="12">
           
-          <code class="ruby">    it {should belong_to :shelter}</code>
+          
+          <code class="ruby">                              address: &quot;123 Purr Pl.&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">                              city: &quot;Arvada&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">                              state: &quot;CO&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">                              zip: &quot;80005&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">      )</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="17">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    @pet1 = Pet.create(image: &quot;https://upload.wikimedia.org/wikipedia/en/d/df/Sam_dog.jpg&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">                      name: &quot;Sam&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">                      description: &quot;Crazy AF and mean...&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">                      approximate_age: 23,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">                      sex: &quot;Male&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">                      shelter_id: @shelter1.id,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">      )</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="24">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    @pet2 = Pet.create(image: &quot;https://cdn.fstoppers.com/styles/large-16-9/s3/lead/2018/12/cat-parody-instagram-removal.jpg&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">                      description: &quot;Weird AF but sweet.&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">                      name: &quot;Burt&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">                      approximate_age: 47,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">                      sex: &quot;Male&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">                      shelter_id: @shelter1.id,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">      )</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="31">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    @pet3 = Pet.create(image: &quot;https://api.time.com/wp-content/uploads/2014/06/49cb79d35e3640a1b005287de39f1754-0.jpg&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">                   name: &quot;Darlin&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">                   description: &quot;Loves to cuddle, needs daily ointment.&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">                   approximate_age: 2,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">                   sex: &quot;Female&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">                   shelter_id: @shelter2.id</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">      )</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &#39;validations&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="40">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it {should validate_presence_of :image}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="41">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it {should validate_presence_of :name}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="42">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it {should validate_presence_of :approximate_age}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="43">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it {should validate_presence_of :sex}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="44">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it {should validate_presence_of :shelter}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &#39;relationships&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="47">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it {should belong_to :shelter}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">end</code>

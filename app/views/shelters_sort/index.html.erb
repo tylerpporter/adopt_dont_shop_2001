@@ -4,10 +4,6 @@
 </section>
 
 <section>
-  <div class='button'><%= link_to "Sort Shelters (Alphabetical)", controller: "shelters_sort", action: "index" %>
-</section>
-
-<section>
   <% @shelters.each do |shelter| %>
     <section id='shelter-<%= shelter.id %>'>
       <div class='grid-container'>

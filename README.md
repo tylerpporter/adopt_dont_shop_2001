@@ -481,7 +481,7 @@ I'm taken back to the Shelters Index Page where I see all of the shelters in ord
 ```
 
 ```
-[ ] done
+[X] done 
 
 User Story 28, Sort Shelters in Alphabetical Order
 

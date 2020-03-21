@@ -10,5 +10,22 @@ RSpec.describe Shelter, type: :model do
   end
   describe 'relationships' do
     it {should have_many :pets}
-  end 
+  end
+  describe 'class methods' do
+    it '.sort' do
+      shelter1 = Shelter.create(name: 'FuzzTime',
+                                address: "895 Fuzz St.",
+                                city: "Westminster",
+                                state: "CO",
+                                zip: "80021"
+                              )
+      shelter2 = Shelter.create(name: 'DogPaws',
+                                address: "123 Pup St.",
+                                city: "Arvada",
+                                state: "CO",
+                                zip: "80005"
+                              )
+      expect(Shelter.sort).to eq([shelter2, shelter1])
+    end
+  end
 end

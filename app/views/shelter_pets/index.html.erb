@@ -2,6 +2,10 @@
   <div class='headers'><h1>All Pets</h1></div>
 </section>
 
+<section align='center'>
+  Pet Count: <%= @shelter_pets.pets.count %>
+</section>
+
 <section class='button'>
     <%= link_to "Create Pet", "/shelters/#{@shelter_pets.id}/pets/new" %>
 </section>

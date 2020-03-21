@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get '/', to: 'welcome#index'
   # shelters
   get '/shelters', to: 'shelters#index'
+  get '/shelters/sorted', to: 'shelters_sort#index'
   get '/shelters/new', to: 'shelters#new'
   post '/shelters', to: 'shelters#create'
   get '/shelters/:id', to: 'shelters#show'

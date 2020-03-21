@@ -30,5 +30,6 @@ RSpec.describe '/shelters/:id/pets', type: :feature do
     expect(page).to have_content(pet2.name)
     expect(page).to have_content(pet2.approximate_age)
     expect(page).to have_content(pet2.sex)
+    expect(page).to have_content("Pet Count: #{Pet.count}")
   end
 end
